@@ -3,7 +3,7 @@ $(() => {
   setInterval(updateClock, 1000);
   setInitialArrival()
 
-  $("#action").on("click", () => {
+  $("#arrive-button").on("click", () => {
     update()
   })
 
