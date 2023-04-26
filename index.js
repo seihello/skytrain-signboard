@@ -63,9 +63,23 @@ function getDestination() {
 
 function updateClock() {
   const currentDate = new Date()
-  $("#current-time").text(`${currentDate.getHours()}:${to2digits(currentDate.getMinutes())}`)
+  $("#current-time").text(`${toAMPM(currentDate.getHours(), currentDate.getMinutes())}`)
 }
 
-function to2digits(num) {
-  return num < 10 ? ("0" + num) : String(num)
+function toAMPM(hour, minute) {
+  if(minute < 10) {
+      minute = "0" + minute
+  }
+  if(hour === 0) {
+      return `${12}:${minute}a.m.`
+  }
+  else if(hour < 12) {
+      return `${hour}:${minute}a.m.`
+  }
+  else if(hour === 12) {
+      return `${12}:${minute}p.m.`
+  }
+  else if(hour > 12) {
+      return `${hour-12}:${minute}p.m.`
+  }
 }
