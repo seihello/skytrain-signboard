@@ -42,18 +42,6 @@ body {
     z-index: 0;
 }
 
-.arrival:nth-child(1) {
-    top: 0px;
-}
-
-.arrival:nth-child(2) {
-    top: 80px;
-}
-
-.arrival:nth-child(3) {
-    top: 160px;
-}
-
 .train-icon {
     height: 80%;
     width: auto;
@@ -115,5 +103,11 @@ body {
     left: calc(900px - 15px);
 }
 
+#action {
+    padding: .3rem 1rem;
+    display: block;
+    margin: 1rem auto;
+    color: black;
+}
 
 
