@@ -11,7 +11,7 @@ $(() => {
 
 function setInitialArrival() {
   for(let i = 0; i < 3; i++) {
-    const eta = i === 0 ? "Now" : `${i*3}min`
+    const eta = i === 0 ? "Now" : `${i*2+1}min`
     const arrivalElement = createArrivalElement(getDestination(), eta)
     arrivalElement.css("top", `${i*80}px`)
     $("#schedule").append(arrivalElement)
@@ -34,7 +34,7 @@ function slideUp() {
 }
 
 function insertNewArrival() {
-  const arrivalElement = createArrivalElement(getDestination(), "6min")
+  const arrivalElement = createArrivalElement(getDestination(), "5min")
   arrivalElement.css("top", `160px`)
   arrivalElement.css("left", `-900px`)
   $("#schedule").append(arrivalElement)
