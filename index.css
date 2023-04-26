@@ -18,7 +18,7 @@ body {
 
 #board {
     width: 1000px;
-    margin: 3rem auto;
+    margin: 5rem auto;
     border: 15px solid rgb(43, 42, 42);
     position: relative;
 }
