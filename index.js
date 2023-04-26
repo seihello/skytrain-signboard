@@ -1,5 +1,6 @@
 $(() => {
 
+  setInterval(updateClock, 1000);
   setInitialArrival()
 
   $("#action").on("click", () => {
@@ -58,4 +59,13 @@ function getDestination() {
     case 1:
       return "Production Way - University"
   }
+}
+
+function updateClock() {
+  const currentDate = new Date()
+  $("#current-time").text(`${currentDate.getHours()}:${to2digits(currentDate.getMinutes())}`)
+}
+
+function to2digits(num) {
+  return num < 10 ? ("0" + num) : String(num)
 }
