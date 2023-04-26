@@ -22,15 +22,31 @@
     width: 100%;
     height: 240px;
     background-color: black;
+    position: relative;
 }
 
 .arrival {
     height: 80px;
+    width: 100%;
     display: flex;
     padding: 0 1rem;
     justify-content: space-between;
     align-items: center;
     font-size: 2.4rem;
+    position: absolute;
+    left: 0;
+}
+
+.arrival:nth-child(1) {
+    top: 0px;
+}
+
+.arrival:nth-child(2) {
+    top: 80px;
+}
+
+.arrival:nth-child(3) {
+    top: 160px;
 }
 
 .train-icon {
