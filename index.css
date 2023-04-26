@@ -17,7 +17,7 @@ body {
 }
 
 #board {
-    width: 900px;
+    width: 1000px;
     margin: 3rem auto;
     border: 15px solid rgb(43, 42, 42);
     position: relative;
@@ -82,7 +82,7 @@ body {
     position: absolute;
     top: -15px;
     left: -15px;
-    width: calc(900px);
+    width: calc(1000px);
     height: calc(280px + 15px * 2);
     border: 15px solid rgb(43, 42, 42);
     z-index: 1;
@@ -98,11 +98,11 @@ body {
 }
 
 #left-cover {
-    left: calc(-900px + 15px);
+    left: calc(-1000px + 15px);
 }
 
 #right-cover {
-    left: calc(900px - 15px);
+    left: calc(1000px - 15px);
 }
 
 #arrive-button {

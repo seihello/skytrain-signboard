@@ -20,7 +20,7 @@ function setInitialArrival() {
 
 function update() {
   $(".arrival").first().animate(
-    { left:'900px' }, 1000, slideUp
+    { left:'1000px' }, 1000, slideUp
   )
 }
 
@@ -36,7 +36,7 @@ function slideUp() {
 function insertNewArrival() {
   const arrivalElement = createArrivalElement(getDestination(), "5min")
   arrivalElement.css("top", `160px`)
-  arrivalElement.css("left", `-900px`)
+  arrivalElement.css("left", `-1000px`)
   $("#schedule").append(arrivalElement)
   $(".arrival").last().animate({left: `0px`}, 500)
 }
