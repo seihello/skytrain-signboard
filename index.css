@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(RingMatrix.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: "MyFont";
+    letter-spacing: -.1rem;
+}
+
+#board {
+    width: 900px;
+    margin: 3rem auto;
+    border: 15px solid rgb(43, 42, 42);
+    box-shadow: 1px 1px 5px rgb(115, 114, 114);
+}
+
+
+#schedule {
+    width: 100%;
+    height: 240px;
+    background-color: black;
+}
+
+.arrival {
+    height: 80px;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.4rem;
+}
+
+.train-icon {
+    height: 80%;
+    width: auto;
+}
+
+.destination {
+    width: 70%;
+}
+
+.eta {
+    width: 15%;
+    text-align: center;
+}
+
+#info {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 8, 125);
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#announce {
+    width: 85%;
+}
+
+#current-time {
+    width: 10%;
+    text-align: center;
+}
+
+
