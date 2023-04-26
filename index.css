@@ -10,11 +10,15 @@
     letter-spacing: -.1rem;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #board {
     width: 900px;
     margin: 3rem auto;
     border: 15px solid rgb(43, 42, 42);
-    box-shadow: 1px 1px 5px rgb(115, 114, 114);
+    position: relative;
 }
 
 
@@ -35,6 +39,7 @@
     font-size: 2.4rem;
     position: absolute;
     left: 0;
+    z-index: 0;
 }
 
 .arrival:nth-child(1) {
@@ -82,5 +87,33 @@
     width: 10%;
     text-align: center;
 }
+
+#frame-cover {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: calc(900px);
+    height: calc(280px + 15px * 2);
+    border: 15px solid rgb(43, 42, 42);
+    z-index: 1;
+}
+
+#left-cover, #right-cover {
+    position: absolute;
+    top: -15px;
+    width: 100%;
+    height: calc(280px + 15px * 2);
+    background-color: white;
+    z-index: 1;
+}
+
+#left-cover {
+    left: calc(-900px + 15px);
+}
+
+#right-cover {
+    left: calc(900px - 15px);
+}
+
 
 
